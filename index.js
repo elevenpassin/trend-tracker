@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 const log = console.log;
 
+const TOPIC = 'javascript';
 const client = new Twitter({
   consumer_key: process.env.CONSUMER_KEY,
   consumer_secret: process.env.CONSUMER_SECRET,
@@ -12,7 +13,7 @@ const client = new Twitter({
 });
 
 const stream = client.stream('statuses/filter', {
-  track: 'react',
+  track: TOPIC,
 });
 
 stream.on('data', function(event){
