@@ -1,0 +1,18 @@
+{
+  "name": "twt-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "buoyantair <buoyantair@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "dotenv": "^5.0.1",
+    "twitter": "^1.7.1"
+  }
+}
